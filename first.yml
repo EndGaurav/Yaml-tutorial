@@ -1,0 +1,21 @@
+# case sensitive
+# like dictionary in python
+# key : value pair
+"firstName" : "gaurav singh"
+1 : "my number"
+---
+# list representation using dash(-)
+- rahul
+- rohit
+- virat
+---
+# block style
+# in block style we indent with 1 space. not tab.
+stadium:
+ - vankhed
+ - lords
+ - melbourne
+ - sydney
+---
+stadium: [chepok, dubai, abbu-dhabi]
+ ... 

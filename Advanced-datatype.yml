@@ -1,0 +1,98 @@
+# Sequence datatype
+student: !!seq
+ - name
+ - roll_no
+ - marks
+
+# like this also
+student: [name, roll_no, marks]
+
+# some of the key of the sequence will be empty
+# sparse sequence datatype
+  sparse seq: 
+  - hello
+  - hey
+  - 
+  - who
+  - Null
+
+
+# Nested sequence datatype
+-
+ - hello
+ - world
+ - how
+-
+ - listen
+ - hear
+
+
+#  maps datatype
+# key : value pair are called maps
+!!map
+
+
+# nested map : map inside map
+name: "gaurav"
+friends of: 
+           good: div
+           normal: akash
+
+# same as 
+name: "gaurav"
+friends of: {good: div, normal: akash}
+
+# pairs datatype: keys may have duplicte value 
+!!pairs
+
+pair example : !!pairs
+ - job: serving stuffs
+ - job: studenet
+
+# same as 
+pair example: !!pairs [job: serving stuffs, job: serving stuffs]
+# this will be array of hashtables
+
+# set datatype: unique value only.
+!!set
+unique: !!set
+ ? gaurav
+ ? rahul
+ ? gaurav
+ ? div 
+
+
+#  dictionary: !!omap
+person: !!omap
+ - gaurav:
+    subject: "computer"
+    class status: "attendive"
+    roll no: 232
+ - divyansh:
+    subject: "mass commication"
+    class status: "rare attendive"
+    roll no: 233
+
+
+
+# Reusing property with anchor tag 
+# anchor : what do you wanna copy and where you wanna copy
+
+likings: &likes #anchor
+ fav modal: kenny
+ dislike modal: kyli
+
+person1:
+ name: "gaurav"
+ <<: *likes #anchor
+
+person2:
+ name: "divyansh"
+ <<: *likes  #anchor
+ fav modal: kim
+
+# person2 same as 
+person1:
+ name: "divyansh"
+ fav modal: kim
+ dislike modal: kyli

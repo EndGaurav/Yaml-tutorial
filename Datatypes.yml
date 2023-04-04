@@ -1,0 +1,50 @@
+# string datatype
+name: "gaurav"
+name: 'gaurav'
+name: gaurav
+
+# for representing number of lines related to single key
+bio: |
+  how are you kenny
+  hope you have done good.
+
+# writing a single line in multiple line
+msg:> 
+  presenting multiple
+  line in a
+  single line 
+
+# same as 
+msg : !!string "presenting multiple line in a single line "
+
+# more datatypes :
+number : 23
+marks : 23.2
+booleanbvalue : !!bool yes #true, T, t, True, TRUE, true: all left side's true are valid.
+booleanbvalue : no #false, F, f, False, FALSE, false: all left side's false are valid.
+
+
+#specifying datatype in yaml
+zero : !!int 0
+positivenumber : !!int 12
+negativenumber : !!int -23
+binarynumber : !!int 0b11001
+hexadecimalnumber : !!int 0x3242
+octalnumber : !!int 03424
+commavalue : !!int +540_000 #54,000
+
+
+# floating point numbers
+float : !!float 23.22
+infinite : !!float .inf
+not a number : .nan
+
+
+# null
+surname: !!null Null # or null, NULL, ~
+~: !!null this is a null key 
+
+# date and time
+date: !!timestamp 2022-11-26
+india time: 2022-11-26T02:23:34 +5:20
+no time zone: 2022-11-26T02:23:34 

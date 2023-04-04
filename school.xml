@@ -1,0 +1,16 @@
+<!-- xml: xtensible markup langauge  -->
+<!-- Another data serialization language -->
+<!-- used to store data in code -->
+<!-- mostly used in backend dev -->
+<!-- its not readable by human thatswhy people prefer yml -->
+<!-- big big xml file cannot be readable by human -->
+<? xml version="1.0" encoding="UTF-8" ?>
+<School name="DPS" principle="Alex">
+    <Students>
+        <student>
+            <name>Gaurav</name>
+            <rolno>90</rolno>
+            <sub>Computer</sub>
+        </student>
+    </Students>
+</School>

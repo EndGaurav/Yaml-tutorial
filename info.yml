@@ -1,0 +1,18 @@
+# YAML : yaml ain't markup language.
+# yaml is just way to represent data 
+# yaml is case sensitive.
+# data serialization language : yaml, json, xml
+# user for:-
+#   configuration file 
+#   logs, caches, etc
+
+# Benefits:
+# simple and easy to read
+# it has a strict syntax - indentation is very important like a python
+# easily convertable into json, xml
+# most lang uses yaml
+# more powerful when represting complex data
+# various tools available
+# parsing is easy 
+
+

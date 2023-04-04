@@ -1,0 +1,6 @@
+# indentation is very important like a python.
+# case sensitive
+# list representative by dash(-)
+# Using triple dash (----) we differentiate documents.
+# Using triple dot (...) we end document.
+# yaml automatically identify datatype.

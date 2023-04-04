@@ -1,0 +1,20 @@
+---
+school:
+- name: DPS
+  principle: Alex
+  student:
+  - name: gaurav
+    roll no: 23
+    subject: computer
+  - name: div
+    roll no: 33
+    subject: mass communication
+- name: ABVP
+  principle: kenny
+  student:
+  - name: Alex
+    roll no: 223
+    subject: Operating systen
+  - name: sourav
+    roll no: 313
+    subject: frontend dev
